@@ -9,7 +9,7 @@ function addPerson (){
   // listElement.innerHTML = personsList;
 
   //2. Create Persons Object
-  var person = new Person(name, age);
+  const person = new Person(name, age);
   console.log(person.name + " " + person.age);
   //3.Add it to the list
   Persons.push(person);
@@ -18,7 +18,7 @@ function addPerson (){
 
 function getByAgeCondition() {
   //1. Get Age condition using html input ageCondition
-  var age = document.getElementById("age").value;
+  var age = document.getElementById("ageCondition").value;
   age = Number(age);
   
 
@@ -35,7 +35,7 @@ function getByAgeCondition() {
   for( person of newList) { //This is ES6 for loop
     personsList += person.describe();
   }
-
+ console.log(personsList);
   //4. update personsList
   var listElement = document.getElementById("personsList");
   listElement.innerHTML = personsList;

@@ -3,14 +3,12 @@ function Contact() {
 Contact.name = "";
 Contact.age = "";
 Contact.address = ""; //Can Address be separate class?
-Contact.addressbook = "";
 //Q. In address class have fields like House Number, street Name, City, State, ZipCode
 Contact.prototype.init = function(name, age, hno,colName) {
   this.name = name;
   this.age = Number(age);
   this.address = new Address();
   this.address.init(hno,colName);
-  
   
 }
 Contact.prototype.describe = function() {

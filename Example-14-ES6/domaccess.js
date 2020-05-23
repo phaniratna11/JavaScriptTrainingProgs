@@ -8,8 +8,13 @@ var arithDOM = (function(){
     dom.getInteger = function(name) {
       var htmlElement = document.getElementById(name);
       var returnValue = Number(0);  //default is zero?
+      try{
       if (!isNaN(htmlElement.value))
         returnValue = Number(htmlElement.value);
+      }
+      catch(error){
+        alert(error);
+      }
       return returnValue;
     }
     dom.getNum3 = function() {
@@ -21,9 +26,15 @@ var arithDOM = (function(){
     
     dom.getString = function(name) {
       var htmlElement = document.getElementById(name);
+      try{
       var returnValue = '';  //default is empty Name?
+
       if (typeof(htmlElement.value) == 'string')
         returnValue = String(htmlElement.value);
+      }
+      catch(error){
+        alert(error);
+      }
       return returnValue;
     }
     dom.getName = function() {

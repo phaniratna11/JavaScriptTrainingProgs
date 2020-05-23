@@ -5,6 +5,7 @@ function Person(name, age) {
   //create Person properties
   this.describe = function() {
     var description = "Name : " + this.name + "\t "+ this.age +"\n";
-    
+    return description;
   }
+ 
 };

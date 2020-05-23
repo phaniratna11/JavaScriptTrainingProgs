@@ -7,7 +7,6 @@
   <script type="text/javascript" src="./domAccess.js"></script>
   <script type="text/javascript" src="./contact.js"></script>
   <script type="text/javascript" src="./index.js"></script>
-  <script type="text/javascript" src="./address.js"></script>
 </head>
 
 <body>
@@ -18,15 +17,14 @@
 
     <label>Enter Name:</label> <input id="name" placeholder="enter name">
     <label>Enter Age:</label> <input id="age" placeholder="enter age">
-    <label>Enter Hno:</label> <input id="hno" placeholder="enter house number">
-    <label>Enter Colony Name :</label> <input id="colName" placeholder="enter colony name">
+    <label>Enter Address:</label> <input id="address" placeholder="enter address">
     <button id="add" onclick="addPerson();">Add Person</button>
   </div>
   <div>
     <br>
     <h2>Get Persons List by age</h2>
     <label>Enter age:</label> <input id="ageCondition" placeholder="enter 0 for all">
-    <button id="nameConditionBtn" onclick="getByAgeCondition();">Get</button>
+    <button id="ageConditionBtn" onclick="getByAgeCondition();">Get</button>
 
     <p id="personsList"> empty</p>
     
